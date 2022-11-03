@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fale conosco - CEUB</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h1>Como podemos te ajudar?</h1>
+	<hr>
+	<p>* Campos de preenchimento obrigatório</p>
+	<form action="/envio.php" method="post">
+		<div>
+			<input type="text" name="nome" placeholder="Nome *" required>
+			<input type="email" name="email" placeholder="E-mail *" required>
+		</div>
+		<div>
+			<input type="tel" name="tel" placeholder="Telefone">
+			<input type="tel" name="cel" placeholder="Celular" required>
+		</div>
+		<div>
+			<select id="assunto" required>
+				<option selected>Fale Conosco</option>
+				<option>Assunto *</option>
+			</select>
+		</div>
+		<div>
+			<textarea required rows="10">Mensagem *</textarea>
+		</div>
+		<div>
+			<button type="submit">Entre em contato</button>
+		</div>
+	</form>
+</body>
+</html>
